@@ -29,9 +29,9 @@ class MojRange:
         else:
             raise IndexError("Indeks je van opsega")
         
-
-for i in MojRange(2,10,3):
-    print(i)
-print()
-r=MojRange(3,12)
-print(r[2])
+if __name__ == "__main__":
+    for i in MojRange(2,10,3):
+        print(i)
+    print()
+    r=MojRange(3,12)
+    print(r[2])

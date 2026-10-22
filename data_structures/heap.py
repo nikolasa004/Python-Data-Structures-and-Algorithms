@@ -90,7 +90,7 @@ class Heap:
         znak="   "
         ispisi=[]
 
-        broj_celih_nivoa=int(math.sqrt(len(self._elementi)))
+        broj_celih_nivoa = (int(math.log2(len(self._elementi))) if self._elementi else 0)
         broj_prvog_lista=2**broj_celih_nivoa-1
 
         ispis=znak*odvojeno_na_pocetku
